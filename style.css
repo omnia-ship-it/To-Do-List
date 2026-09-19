@@ -1,0 +1,204 @@
+:root {
+    --nz-bg: #FFF9F5;
+    --nz-ink: #2B2118;
+    --nz-ink-soft: #7A6F65;
+    --nz-coral: #F4695C;
+    --nz-coral-dark: #DD5346;
+    --nz-coral-tint: #FDE7E4;
+    --nz-teal: #2FB6A8;
+    --nz-teal-tint: #E3F6F3;
+    --nz-amber: #F5A623;
+    --nz-amber-tint: #FDF0DA;
+    --nz-card: #FFFFFF;
+    --nz-border: #F0E4DC;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--nz-bg);
+    color: var(--nz-ink);
+}
+
+h1, h2, h3, h4, h5, h6, .page-title, .brand-word {
+    font-family: 'El Messiri', 'Tajawal', sans-serif;
+}
+
+a {
+    color: var(--nz-coral);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--nz-coral-dark);
+}
+
+/* ===== Auth cards (login / register) ===== */
+.logo-img {
+    width: 96px;
+}
+
+.card {
+    border: none;
+    border-radius: 18px;
+    background-color: var(--nz-card);
+    box-shadow: 0 10px 30px rgba(43, 33, 24, 0.08);
+}
+
+.btn-primary {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--nz-coral);
+    border-color: var(--nz-coral);
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--nz-coral-dark);
+    border-color: var(--nz-coral-dark);
+}
+
+.btn-primary.btn-sm {
+    border-radius: 8px;
+}
+
+.form-control {
+    border-radius: 10px;
+    border-color: var(--nz-border);
+    padding: 10px 14px;
+}
+
+.form-control:focus {
+    border-color: var(--nz-coral);
+    box-shadow: 0 0 0 0.2rem rgba(244, 105, 92, 0.15);
+}
+
+/* ===== Navbar ===== */
+.navbar-nazzem {
+    background-color: var(--nz-card);
+    border-bottom: 1px solid var(--nz-border);
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.navbar-nazzem .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-nazzem .navbar-brand img {
+    width: 44px;
+}
+
+.navbar-nazzem .brand-word {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--nz-coral);
+}
+
+.navbar-nazzem .nav-link {
+    color: var(--nz-ink-soft);
+    font-weight: 600;
+    padding: 8px 18px !important;
+    border-radius: 999px;
+    margin: 0 3px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.navbar-nazzem .nav-link:hover {
+    color: var(--nz-coral);
+    background-color: var(--nz-coral-tint);
+}
+
+.navbar-nazzem .nav-link.active {
+    color: #ffffff !important;
+    background-color: var(--nz-coral);
+}
+
+/* ===== Page layout ===== */
+.page-title {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+/* ===== Stat cards (Dashboard) ===== */
+.stat-card {
+    border: none;
+    border-radius: 16px;
+    padding: 22px 18px;
+    text-align: center;
+}
+
+.stat-card .stat-icon {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.stat-card .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.stat-card .stat-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.stat-card.stat-total { background-color: var(--nz-coral-tint); color: var(--nz-coral-dark); }
+.stat-card.stat-done  { background-color: var(--nz-teal-tint); color: #1E8377; }
+.stat-card.stat-today { background-color: var(--nz-amber-tint); color: #A66D0E; }
+.stat-card.stat-overdue { background-color: #FBE4E1; color: #C43A2C; }
+
+/* ===== Task list ===== */
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--nz-card);
+    border: 1px solid var(--nz-border);
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.task-item:hover {
+    box-shadow: 0 6px 18px rgba(43, 33, 24, 0.06);
+    transform: translateY(-1px);
+}
+
+.task-item .form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-left: 14px;
+    border-color: var(--nz-coral);
+}
+
+.task-item .form-check-input:checked {
+    background-color: var(--nz-coral);
+    border-color: var(--nz-coral);
+}
+
+.task-item .task-title {
+    font-weight: 500;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: #ACA096;
+}
+
+.task-date-badge {
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.task-date-badge.today    { background-color: var(--nz-amber-tint); color: #A66D0E; }
+.task-date-badge.overdue  { background-color: #FBE4E1; color: #C43A2C; }
+.task-date-badge.upcoming { background-color: var(--nz-teal-tint); color: #1E8377; }
+.task-date-badge.done     { background-color: #F1EDE9; color: #9B8F84; }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اسم مشروعك - إنشاء حساب</title>
+    <title>اسم مشروعك - تسجيل الدخول</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=El+Messiri:wght@600;700&display=swap" rel="stylesheet">
@@ -19,18 +19,12 @@
 
                     <!-- Logo & Title -->
                     <div class="text-center mb-4">
-                        <img src="images/Nazzem-logo.png" alt="Logo" class="img-fluid logo-img mb-1">
-                        <h4 class="fw-bold">إنشاء حساب جديد</h4>
-                        <p class="text-muted small">سجلي بياناتك عشان تبدأي معانا</p>
+                        <img src="images/Nazzem-logo.png" alt="Logo" class="img-fluid logo-img mb-2">
+                        <h4 class="fw-bold">تسجيل الدخول</h4>
+                        <p class="text-muted small">أهلاً بيكي، سجلي دخولك للمتابعة</p>
                     </div>
 
                     <form>
-
-                        <!-- Full Name Field -->
-                        <div class="mb-3">
-                            <label for="fullName" class="form-label">الاسم بالكامل</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="اسمك بالكامل" required>
-                        </div>
 
                         <!-- Email Field -->
                         <div class="mb-3">
@@ -44,27 +38,24 @@
                             <input type="password" class="form-control" id="password" placeholder="********" required>
                         </div>
 
-                        <!-- Confirm Password Field -->
-                        <div class="mb-3">
-                            <label for="confirmPassword" class="form-label">تأكيد كلمة المرور</label>
-                            <input type="password" class="form-control" id="confirmPassword" placeholder="********" required>
-                        </div>
-
-                        <!-- Terms checkbox -->
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
-                            <label class="form-check-label small" for="agreeTerms">
-                                موافقة على <a href="#" class="text-decoration-none">الشروط والأحكام</a>
-                            </label>
+                        <!-- Remember me + Forgot password -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rememberMe">
+                                <label class="form-check-label small" for="rememberMe">
+                                    تذكرني
+                                </label>
+                            </div>
+                            <a href="forgot-password.html" class="small text-decoration-none">نسيت كلمة المرور؟</a>
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit" class="btn btn-primary w-100 mt-2">إنشاء الحساب</button>
+                        <button type="submit" class="btn btn-primary w-100 mt-2">تسجيل الدخول</button>
 
-                        <!-- Login Link -->
+                        <!-- Register Link -->
                         <p class="text-center small mt-3 mb-0">
-                            عندك حساب بالفعل؟
-                            <a href="login.html" class="text-decoration-none fw-bold">سجلي دخولك</a>
+                            معندكيش حساب؟
+                            <a href="register.html" class="text-decoration-none fw-bold">سجلي دلوقتي</a>
                         </p>
 
                     </form>
